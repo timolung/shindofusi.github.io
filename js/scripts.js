@@ -95,9 +95,9 @@ $(document).ready(function () {
                     "border-bottom": "none",
                     "padding": "34px 0"
                 });
-                // $('header .member-actions').css({
-                //     "top": "26px",
-                // });
+                $('header .member-actions').css({
+                    "top": "34px",
+                });
                 $('header .navicon').css({
                     "top": "34px",
                 });
@@ -107,9 +107,9 @@ $(document).ready(function () {
                     "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
                     "padding": "40px 0"
                 });
-                // $('header .member-actions').css({
-                //     "top": "41px",
-                // });
+                $('header .member-actions').css({
+                    "top": "41px",
+                });
                 $('header .navicon').css({
                     "top": "48px",
                 });
