@@ -33,17 +33,39 @@ $(document).ready(function () {
         offset: '75%'
     });
     $('.wp7').waypoint(function () {
-        $('.wp7').addClass('animated fadeInUp');
+        $('.wp7').addClass('animated fadeInLeft');
     }, {
         offset: '75%'
     });
     $('.wp8').waypoint(function () {
-        $('.wp8').addClass('animated fadeInLeft');
+        $('.wp8').addClass('animated fadeInRight');
     }, {
         offset: '75%'
     });
     $('.wp9').waypoint(function () {
-        $('.wp9').addClass('animated fadeInRight');
+        $('.wp9').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+    $('.wp10').waypoint(function () {
+        $('.wp10').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
+
+
+    $('.wp11').waypoint(function () {
+        $('.wp11').addClass('animated fadeInUp');
+    }, {
+        offset: '75%'
+    });
+    $('.wp12').waypoint(function () {
+        $('.wp12').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+    $('.wp13').waypoint(function () {
+        $('.wp13').addClass('animated fadeInRight');
     }, {
         offset: '75%'
     });
@@ -128,7 +150,7 @@ $(document).ready(function () {
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - 90
-                    }, 2000);
+                    }, 1000);
                     return false;
                 }
             }
@@ -184,23 +206,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Shay and Timo's Wedding",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Jul 9, 2021 16:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('Jul 9, 2021 20:00'),
 
             // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+            address: '341 Lowell Street, Lexington',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
+            description: "We can't wait to see you on our big day!"
         }
     });
 
@@ -218,7 +240,7 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbyT5NYzRfDE60C_91ABRmuEQt4qzrQUJkiQ1MOZhy402kFJn5me/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
@@ -240,33 +262,33 @@ $(document).ready(function () {
 /********************** Extras **********************/
 
 // Google map
-function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: location,
-        scrollwheel: false
-    });
-
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
-}
-
-function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: la_fiesta,
-        scrollwheel: false
-    });
-
-    var marker = new google.maps.Marker({
-        position: la_fiesta,
-        map: map
-    });
-}
+// function initMap() {
+//     var location = {lat: 22.5932759, lng: 88.27027720000001};
+//     var map = new google.maps.Map(document.getElementById('map-canvas'), {
+//         zoom: 15,
+//         center: location,
+//         scrollwheel: false
+//     });
+//
+//     var marker = new google.maps.Marker({
+//         position: location,
+//         map: map
+//     });
+// }
+//
+// function initBBSRMap() {
+//     var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+//     var map = new google.maps.Map(document.getElementById('map-canvas'), {
+//         zoom: 15,
+//         center: la_fiesta,
+//         scrollwheel: false
+//     });
+//
+//     var marker = new google.maps.Marker({
+//         position: la_fiesta,
+//         map: map
+//     });
+// }
 
 // alert_markup
 function alert_markup(alert_type, msg) {
