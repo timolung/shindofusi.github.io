@@ -342,6 +342,8 @@ header {
     }
   }
   ul.member-actions {
+    margin: 0 75px 0 0;
+    padding: 0;
     li {
       display: inline;
 
@@ -361,7 +363,7 @@ header {
   .member-actions {
     position: absolute;
     right: 0;
-    top: 41px;
+    top: 35px;
     transition: all 700ms ease-in-out;
   }
 }
