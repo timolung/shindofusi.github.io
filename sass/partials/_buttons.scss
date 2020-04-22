@@ -5,9 +5,11 @@
 .btn {
 	font-size: 13px;
 	border: solid 2px;
-	-moz-border-radius: 40px;
-	-webkit-border-radius: 40px;
-	border-radius: 40px;
+	// -moz-border-radius: 40px;
+	// -webkit-border-radius: 40px;
+	// border-radius: 40px;
+	// height: 40px;
+	// width: 40px;
 	display: inline-block;
 	text-transform: uppercase;
 }
@@ -18,12 +20,13 @@
 }
 .btn-white {
 	font-size: 13px;
-	border: solid 2px;
-	-moz-border-radius: 40px;
-	-webkit-border-radius: 40px;
-	border-radius: 40px;
+	border: solid 1px;
+	// -moz-border-radius: 40px;
+	// -webkit-border-radius: 40px;
+	// border-radius: 40px;
 	display: inline-block;
-	border-color: $txt-light;
+	// border-color: $txt-light;
+	border-color: $black-color;
 }
 .btn-white:hover, .btn-white:focus {
 	color: $accent-color;

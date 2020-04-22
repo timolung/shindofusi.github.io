@@ -251,8 +251,8 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
+  min-height: 100vh;
+  background: url('../img/cover_photo.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -293,17 +293,17 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: rgba(255, 255, 255, .88);
   z-index: 999;
   width: 100%;
 }
 header {
-  padding: 50px 0;
+  padding: 40px 0;
   border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   position: relative;
   width: 1170px;
   margin: 0 auto;
-  transition: padding 300ms ease-in-out;
+  transition: padding 700ms ease-in-out;
 
   a {
     color: $txt-light;
@@ -318,7 +318,7 @@ header {
     display: inline-block;
   }
   .logo img {
-    height: 19px;
+    height: 30px;
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
@@ -328,7 +328,8 @@ header {
       display: inline;
 
       a {
-        color: $txt-light;
+        // color: $txt-light;
+        color: $black-color;
         padding-right: 25px;
 
         &:hover {
@@ -345,7 +346,8 @@ header {
       display: inline;
 
       a {
-        color: $txt-light;
+        // color: $txt-light;
+        color: $black-color;
 
         &:hover {
           color: $accent-color;
@@ -359,8 +361,8 @@ header {
   .member-actions {
     position: absolute;
     right: 0;
-    top: 41px;
-    transition: all 300ms ease-in-out;
+    top: 31px;
+    transition: all 700ms ease-in-out;
   }
 }
 .down-arrow {
@@ -399,6 +401,14 @@ Intro
   width: 80%;
 }
 
+// .col-md-6 {
+//     display: inline-block;
+// }
+//
+// .row {
+//   margin: auto, 0;
+// }
+
 #intro {
   padding-top: 40px;
   img {
@@ -406,6 +416,7 @@ Intro
     height: auto;
   }
 }
+
 #intro p {
   text-align: center;
 }
