@@ -111,6 +111,7 @@ $(document).ready(function () {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
+
             if (scroll >= 20) {
                 $('section.navigation').addClass('fixed');
                 $('header').css({
@@ -136,6 +137,30 @@ $(document).ready(function () {
                     "top": "48px",
                 });
             }
+            // Highlight current section
+            $('.header-nav li a').each(function() {
+              var sectionLink = $(this);
+              // capture the height of the navbar
+              var navHeight = 79;
+              var section = $(sectionLink.attr('href'));
+
+              // subtract the navbar height from the top of the section
+              try{
+                if(section.position().top - navHeight <= scroll && section.position().top + section.height()> scroll) {
+                  $('.primary-nav li').removeClass('active');
+                  sectionLink.parent().addClass('active');
+                } else {
+                  sectionLink.parent().removeClass('active');
+                }
+              } catch (e) {
+                  if (e instanceof TypeError) {
+                    // statements to handle this very common expected error
+                  } else {
+                    throw e;  // re-throw the error unchanged
+                  }
+                }
+
+            });
         });
     });
     /***************** Smooth Scrolling ******************/
