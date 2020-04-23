@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "animate.css": "^3.7.2",
+    "background-video": "^2.0.1",
     "font-awesome": "^4.7.0",
     "waypoints": "^4.0.1"
   }
