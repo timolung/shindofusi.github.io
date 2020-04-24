@@ -258,6 +258,9 @@ Hero
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   /*.rsvp-btn {
     position: absolute;
@@ -278,7 +281,7 @@ Hero
     margin-bottom: 80px;
   }
   .hero-content {
-    padding-top: 40%;
+    padding-top: 25%;
   }
   // .hero-content img {
   //   width: 55%;
@@ -290,9 +293,16 @@ Hero
     margin-bottom: 3%;
   }
 }
+.hero-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 .navigation {
   transition: all 300ms ease-in-out;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 999;
 }
