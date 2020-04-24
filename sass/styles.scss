@@ -372,11 +372,8 @@ header {
       a {
         // color: $txt-light;
         color: $accent-color;
-        // padding-right: 25px;
-      }
-      &:last-child a {
-        color: $accent-color;
         border-color: $accent-color;
+        // padding-right: 25px;
       }
     }
   }
@@ -787,6 +784,13 @@ Embed video
 /* ==========================================================================
 Google map
 ========================================================================== */
+
+#map {
+  height: 500px;
+  width: 100%;
+  background: url('../img/cover_photo.jpg') center center;
+}
+
 #map-canvas {
   height: 500px;
   width: 100%;
@@ -798,7 +802,9 @@ Google map
   margin-bottom: 150px;
 }
 #map-content {
-  margin-top: 40px;
+  position: relative;
+  height: 100%;
+  // margin-top: -40px;
   padding: 50px 60px;
   background: #f8f9fd;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
