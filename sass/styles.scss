@@ -793,7 +793,7 @@ Google map
 }
 
 #map-container {
-    width: 80%; /*can be in percentage also.*/
+    width: 70%; /*can be in percentage also.*/
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -812,7 +812,8 @@ Google map
 }
 #map-content {
   // position: relative;
-  padding: 50px 60px;
+  width: 100%;
+  padding: 10%;
   background: #f8f9fd;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
