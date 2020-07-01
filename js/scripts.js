@@ -258,13 +258,16 @@ $(document).ready(function () {
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
         var data = $(this).serialize();
-
+        console.log('hello');
+        console.log(MD5($('#invite_code').val()));
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== 'f70587e49c294a71345dbde75faa6f77') {
+              console.log('what on earth');
+              console.log(MD5($('#invite_code').val()));
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
+          console.log('where is this message going');
             $.post('https://script.google.com/macros/s/AKfycbyT5NYzRfDE60C_91ABRmuEQt4qzrQUJkiQ1MOZhy402kFJn5me/exec', data)
                 .done(function (data) {
                     console.log(data);
