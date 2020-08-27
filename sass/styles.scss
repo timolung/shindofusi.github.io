@@ -611,90 +611,6 @@ Features-stack
   }
 }
 
-/* ==========================================================================
-.blog
-========================================================================== */
-.blog {
-  padding-bottom: 120px;
-
-  img {
-    width: 100%;
-    height: auto;
-    -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-  }
-  h2 {
-    font-size: $blog-post-title;
-    color: $txt-accent;
-    font-weight: $semibold;
-    text-transform: uppercase;
-    margin-top: 35px;
-  }
-  .btn {
-    margin-top: 20px;
-  }
-  .blog-img-wrap {
-    position: relative;
-    overflow: hidden;
-
-    .overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($white-color, 0.5);
-      -moz-transition: all 300ms ease-in-out;
-      -o-transition: all 300ms ease-in-out;
-      -webkit-transition: all 300ms ease-in-out;
-      transition: all 300ms ease-in-out;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
-      opacity: 0;
-    }
-    i {
-      color: $white-color;
-      font-size: 20px;
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 25px;
-      right: 35px;
-    }
-  }
-  .blog-img-wrap:hover img, .blog-img-wrap:focus img {
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  .blog-img-wrap:hover .overlay, .blog-img-wrap:focus .overlay {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-    filter: alpha(opacity=1);
-    opacity: 1;
-    z-index: 9;
-  }
-  figcaption i {
-    margin-left: 5px;
-    font-size: 15px;
-  }
-  figcaption a.blog-post-title {
-    color: $txt-primary;
-  }
-  figcaption a.blog-post-title:hover, figcaption a.blog-post-title:focus {
-    color: $txt-secondary;
-  }
-}
-
-/* ==========================================================================
-Instagram
-========================================================================== */
-#instagram {
-  img {
-    width: 100%;
-  }
-}
 
 /* ==========================================================================
 Engagement Pics
@@ -791,10 +707,10 @@ Embed video
 }
 
 /* ==========================================================================
-Google map
+Registry
 ========================================================================== */
 
-#map {
+#registry {
   display: flex;
   align-items: center;
   height: 500px;
@@ -802,7 +718,7 @@ Google map
   background: url('../img/cover_photo.jpg') center center;
 }
 
-#map-container {
+#registry-container {
     width: 70%; /*can be in percentage also.*/
     height: auto;
     margin: 0 auto;
@@ -810,23 +726,28 @@ Google map
     // transform: translate(-0%,5%);
 }
 
-#map-canvas {
+#registry-canvas {
   height: 500px;
   width: 100%;
   background: url('../img/cover_photo.jpg') center center;
 }
-#map-content-wrapper {
+#registry-content-wrapper {
   position: relative;
   margin-top: -530px;
   margin-bottom: 150px;
 }
-#map-content {
+#registry-content {
   // position: relative;
   width: 100%;
   padding: 10%;
   background: #f8f9fd;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+  .registry-btn {
+    padding: 5px;
+    display: inline-block
+    font-size: 13px;
+  }
 }
 #btn-show-content {
   padding: 20px;
@@ -836,7 +757,7 @@ Google map
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
 }
-.toggle-map-content {
+.toggle-registry-content {
   opacity: 0;
   visibility: hidden;
 }

@@ -216,13 +216,13 @@
         margin-top: 0;
     }
 
-    .events .leftcol {
+    .party .leftcol {
         padding: 0 15px;
         margin-bottom: 15px;
         border-right: none;
     }
 
-    .events .rightcol {
+    .party .rightcol {
         padding: 0 20px;
     }
 
@@ -230,11 +230,11 @@
         border-radius: 0;
     }
 
-    #map-content-wrapper {
+    #registry-content-wrapper {
         margin-bottom: 40px;
     }
 
-    #map-content {
+    #registry-content {
         margin-top: 0;
         padding: 35px;
     }
@@ -265,7 +265,7 @@
         top: 10px;
         right: 10px; }
 
-    #map-content-wrapper {
+    #registry-content-wrapper {
         margin-bottom: 0;
     }
 
