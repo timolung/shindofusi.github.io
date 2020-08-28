@@ -252,7 +252,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 100vh;
-  background: url('../img/cover_photo.jpg') center center;
+  background: url('../img/cover_color.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -745,7 +745,7 @@ Registry
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   .registry-btn {
     padding: 5px;
-    display: inline-block
+    display: inline-block;
     font-size: 13px;
   }
 }
