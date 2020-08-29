@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,500,700);
 // Imports
 //@import "compass";
 @import "partials/typography";
@@ -260,7 +261,12 @@ Hero
   position: relative;
   display: flex;
   justify-content: center;
+
   align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   /*.rsvp-btn {
     position: absolute;
@@ -275,6 +281,7 @@ Hero
     margin-bottom: 40px;
   }
   p.intro {
+    font: $sans-serif;
     color: $txt-light;
     font-size: 20px;
     font-weight: 300;
@@ -290,7 +297,7 @@ Hero
 
   .title_img {
     max-width: 35%;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
   }
 }
 .hero-center {
@@ -319,11 +326,14 @@ header {
   width: 1170px;
   margin: 0 auto;
   transition: padding 700ms ease-in-out;
-
+  letter-spacing: 3px;
+  // font-stretch: ultra-expanded;
+  font-weight: $normal;
   a {
     color: $txt-light;
     text-transform: uppercase;
     font-size: $nav-font-size;
+
 
     &.login {
       margin-right: 20px;
@@ -340,6 +350,7 @@ header {
     padding: 0;
     li {
       display: inline;
+
 
       a {
         // color: $txt-light;

@@ -1,4 +1,4 @@
-AuthUserFile /.htpasswd
+AuthUserFile C:/Users/timot/Documents/Code/shindofusi.github.io/.htpasswd
 AuthType Basic
 AuthName “Login Details”
 Require valid-user
