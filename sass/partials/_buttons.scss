@@ -13,7 +13,16 @@
 	display: inline-block;
 	text-transform: uppercase;
 }
-.btn:hover, .btn:focus {
+.btn-small {
+	padding: 8px 30px;
+}
+.btn-large {
+	padding: 15px 40px;
+}
+.btn-margin-right {
+	margin-right: 20px;
+}
+.btn:hover, .btn:active {
 	color: $accent-color;
 	border-color: $accent-color;
 	background-color: $accent-color;
@@ -24,7 +33,7 @@
 	display: inline-block;
 	border-color: $accent-color;
 }
-.btn-color:hover, .btn-color:focus {
+.btn-color:hover, .btn-color:active {
 	color: $white-color;
 	border-color: $accent-color;
 	background-color: $accent-color;
@@ -33,17 +42,18 @@
 .btn-white {
 	font-size: 10px;
 	border: solid 1px;
-	// -moz-border-radius: 40px;
-	// -webkit-border-radius: 40px;
-	// border-radius: 40px;
 	display: inline-block;
-	// border-color: $txt-light;
 	border-color: $black-color;
 }
 .btn-white:hover {
 	color: $accent-color;
 	border-color: $accent-color;
 }
+.btn-white:active {
+	color: $white-color !important;
+	background-color: $accent-color;
+}
+
 .btn-fill {
 	color: $white-color;
 	border: solid 2px $accent-color;
@@ -54,17 +64,13 @@
 	text-transform: uppercase;
 	background-color: $accent-color;
 }
-.btn-fill:hover, .btn-fill:focus {
+.btn-fill:hover {
 	color: $white-color;
 	background-color: $accent-color-hover;
 	border-color: $accent-color-hover;
 }
-.btn-small {
-	padding: 8px 30px;
-}
-.btn-large {
-	padding: 15px 40px;
-}
-.btn-margin-right {
-	margin-right: 20px;
+.btn-fill:active {
+	color: $white-color;
+	background-color: $black-color;
+	border-color: $black-color;
 }

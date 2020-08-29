@@ -119,7 +119,7 @@ $(document).ready(function () {
                     "padding": "24px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "20px",
+                    "top": "22px",
                 });
                 $('header .navicon').css({
                     "top": "34px",
@@ -131,7 +131,7 @@ $(document).ready(function () {
                     "padding": "40px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "35px",
+                    "top": "38px",
                 });
                 $('header .navicon').css({
                     "top": "48px",
