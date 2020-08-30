@@ -299,7 +299,8 @@ Hero
 
   .title_img {
     max-width: 35%;
-    margin-bottom: 1%;
+    margin-top: 10%;
+    margin-bottom: -1%;
   }
 }
 .hero-center {
@@ -423,12 +424,27 @@ header {
 }
 
 /* ==========================================================================
-Social share buttons
+Schedule
 ========================================================================== */
-.share-bar {
-  margin-top: 20px;
-}
+#schedule{
+  .img{
+    width:70px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .bot-buffer{
+    margin-bottom:30px;
 
+  }
+  .bot-buffer:after {
+    content: "";
+    display: block;
+    width: 60%;
+    margin: 1em auto 0;
+    margin-bottom:30px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+  }
+}
 /* ==========================================================================
 Intro
 ========================================================================== */
