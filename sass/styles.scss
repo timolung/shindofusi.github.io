@@ -427,6 +427,10 @@ header {
 Schedule
 ========================================================================== */
 #schedule{
+  // p {
+  //   padding-left: 5%;
+  //   padding-right: 5%;
+  // }
   .container{
     width: 85%; /*can be in percentage also.*/
     height: auto;
@@ -435,17 +439,20 @@ Schedule
     // transform: translate(-0%,5%);
   }
   .text-slim{
-    padding-right: 7%;
-    padding-left: 7%;
+    padding: 0 0 0 0;
+    min-height: 400px;
+    max-height: 400px;
+  }
+  .btn-bot {
+    position: absolute;
+    bottom: 5px;
+    // margin-left: 50%;
   }
   .img{
     width:70px;
     height: auto;
     margin-bottom: 15px;
-  }
-  .bot-buffer{
-    margin-bottom:30px;
-
+    left: 50%;
   }
   .bot-buffer:after {
     content: "";
@@ -480,25 +487,53 @@ Intro
   width: 80%;
 }
 
-// .col-md-6 {
-//     display: inline-block;
-// }
-//
-// .row {
-//   margin: auto, 0;
-// }
-
 #intro {
-  padding-top: 40px;
-  img {
-    width: 100%;
-    height: auto;
+  h3{
+    color: $accent-color-hover;
+
+  }
+  p {
+    text-align: center;
+    color: $white-color;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .proposal-img {
+    min-height: 100vh;
+    background: url('../img/websizephotos/Preview Gallery/S&T-SP-5.jpg') center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width:100%;
+  }
+  .top {
+    position: absolute;
+    top:5%;
+    left: 0%;
+  }
+  .mid{
+    position: absolute;
+    top:35%;
+    left: 0%;
+  }
+  .bot {
+    position: absolute;
+    top:65%;
+    left: 0%;
+  }
+  .left {
+    background-color: $black-color;
+    height: 100vh;
   }
 }
 
-#intro p {
-  text-align: center;
-}
 
 /* ==========================================================================
 Features-stack
