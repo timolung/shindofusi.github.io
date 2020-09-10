@@ -427,6 +427,9 @@ header {
 Schedule
 ========================================================================== */
 #schedule{
+  h3 {
+    padding: 0px;
+  }
   p {
     padding-left: 5%;
     padding-right: 5%;
@@ -499,6 +502,7 @@ Intro
     padding: 0px;
   }
   h3{
+
     color: $accent-color;
     font-size: 14px;
     margin-left: 20%;
@@ -742,7 +746,11 @@ Features-stack
 .events
 ========================================================================== */
 .events {
+  h3 {
+    padding-left: 85px;
+  }
   .leftcol {
+    padding-left: 100px;
     padding-right: 100px;
     border-right: solid 1px $keyline-color;
   }
@@ -756,6 +764,12 @@ Features-stack
     text-transform: lowercase;
     color: $txt-primary;
   }
+  @media screen and (max-width: 991px) {
+    .leftcol{
+      border-right-style: none;
+    }
+  }
+
 }
 
 
