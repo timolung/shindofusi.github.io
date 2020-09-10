@@ -431,6 +431,11 @@ Schedule
     padding-left: 5%;
     padding-right: 5%;
   }
+  @media screen and (max-width: 850px) {
+    p{
+      font-size: 13px;
+    }
+  }
   .container{
     width: 85%; /*can be in percentage also.*/
     height: auto;
