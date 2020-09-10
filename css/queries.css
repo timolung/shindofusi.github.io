@@ -1,4 +1,8 @@
+
 @media screen and (max-width: 1200px) {
+    /* p{
+      font-size: 10px;
+    } */
     header {
         width: 90%;
         margin: 0 auto;
@@ -66,7 +70,7 @@
 
     nav ul li a {
         color: #fff;
-        font-size: 25px;
+        font-size: 10px;
         text-transform: uppercase;
         font-weight: 600;
         -moz-transition: all 300ms ease-in-out;

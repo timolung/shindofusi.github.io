@@ -78,11 +78,11 @@ $(document).ready(function () {
     /***************** Initiate Fancybox ******************/
 
     $('.single_image').fancybox({
-        padding: 4
+        padding: 0
     });
 
     $('.fancybox').fancybox({
-        padding: 4,
+        padding: 0,
         width: 1000,
         height: 800
     });
