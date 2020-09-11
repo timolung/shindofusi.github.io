@@ -458,6 +458,11 @@ Schedule
     left: 50%;
     transform: translate(-50%,0);
   }
+  .btn-color:active {
+    color: $white-color;
+    background-color: $black-color;
+    border-color: $white-color;
+  }
   .img{
     width:50px;
     height: auto;
@@ -567,36 +572,41 @@ Intro
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
-    // white-space: pre-wrap;
   }
-  // .text-left:hover {
-  //   // position: absolute;
-  //   overflow: visible;
-  //   white-space: normal;
-  //   height: auto;
-  //   background-color: $black-color;
-  //   z-index: 1000;
-  //   // height: 100%;
-  // }
-  // mark {
-  //   background-color: $black-color;
-  //   color: $white-color;
-  // }
-  // @media screen and (max-width: 1285px) {
+  // @media screen and (max-width: 1403px) {
   //   p{
   //     font-size: 12px;
   //   }
   // }
+  // @media screen and (max-width: 1193px) {
+  //   p{
+  //     font-size: 11px;
+  //   }
+  // }
+  // @media screen and (max-width: 1086px) {
+  //   p{
+  //     font-size: 10px;
+  //   }
+  // }
+  // // @media screen and (max-width: 324px) {
+  // //   p{
+  // //     font-size: 12px;
+  // //   }
+  // // }
+  // // @media screen and (max-width: 324px) {
+  // //   p{
+  // //     font-size: 11px;
+  // //   }
+  // // }
+
+
+
+
   @media screen and (max-width: 1100px) {
     p{
       font-size: 12px;
     }
   }
-  // @media screen and (max-width: 1031px) {
-  //   p{
-  //     font-size: 11px;
-  //   }
-  // }
   @media screen and (max-width: 991px) {
     p{
       font-size: 13px;
@@ -818,7 +828,7 @@ FAQs
     margin-left: 20%;
   }
   .proposal-img {
-    min-height: 900px;
+    min-height: 800px;
     height: 100vh;
     background: url('../img/eng/full/S&T-engagement-107.jpg') center center;
     -webkit-background-size: cover;
@@ -844,7 +854,7 @@ FAQs
   .right {
     background-color: $black-color;
     height: 100vh;
-    min-height: 900px;
+    min-height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1066,7 +1076,8 @@ Registry
   }
   .btn{
     // border-radius: 0;
-    font-size: 10px;
+    font-size: 11px;
+    color: $white-color;
   }
   .row{
     width: 100%;
@@ -1129,6 +1140,7 @@ Registry
 RSVP form
 ========================================================================== */
 .rsvp {
+  padding-top: 0;
   padding-bottom: 140px;
   .rsvp-form {
     .rsvp-btn {
@@ -1223,6 +1235,16 @@ footer {
   }
   .to-top-wrapper .to-top:hover {
     margin-top: -5px;
+  }
+  .to-top-wrapper:hover {
+   border-color: $accent-color;
+  }
+  .to-top:active {
+    color: $white-color;
+  }
+  .to-top-wrapper:active {
+    border-color: $black-color;
+    background-color: $black-color;
   }
   span.fa-heart {
     color: #ff415c;
