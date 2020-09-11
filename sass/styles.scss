@@ -602,6 +602,16 @@ Intro
       font-size: 13px;
     }
   }
+  @media screen and (max-width: 324px) {
+    p{
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 324px) {
+    p{
+      font-size: 11px;
+    }
+  }
 }
 
 
@@ -810,7 +820,7 @@ FAQs
   .proposal-img {
     min-height: 900px;
     height: 100vh;
-    background: url('../img/eng/full/S&T-engagement-70.jpg') center center;
+    background: url('../img/eng/full/S&T-engagement-107.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -849,6 +859,7 @@ FAQs
     overflow: hidden;
     text-overflow: ellipsis;
     // white-space: pre-wrap;
+    width: 100%;
   }
   // .text-left:hover {
   //   // position: absolute;
@@ -883,6 +894,17 @@ FAQs
       font-size: 13px;
     }
   }
+  @media screen and (max-width: 324px) {
+    p{
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 324px) {
+    p{
+      font-size: 11px;
+    }
+  }
+
 }
 
 
@@ -1016,11 +1038,41 @@ Registry
 ========================================================================== */
 
 #registry {
+  p{
+    font-size: 13px;
+    color: $black-color;
+  }
   display: flex;
   align-items: center;
-  height: 500px;
+  height: 600px;
   width: 100%;
-  background: url('../img/cover_photo.jpg') center center;
+  background: url('../img/eng/full/S&T-engagement-150-c.jpg') center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  justify-content: center;
+
+  object-fit: cover;
+  overflow:hidden;
+  .box {
+    background: $white-color;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .btn{
+    // border-radius: 0;
+    font-size: 10px;
+  }
+  .row{
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 #registry-container {
@@ -1031,11 +1083,11 @@ Registry
     // transform: translate(-0%,5%);
 }
 
-#registry-canvas {
-  height: 500px;
-  width: 100%;
-  background: url('../img/cover_photo.jpg') center center;
-}
+// #registry-canvas {
+//   height: 500px;
+//   width: 100%;
+//   background: url('../img/eng/full/S&T-engagement-162.jpg') center center;
+// }
 #registry-content-wrapper {
   position: relative;
   margin-top: -530px;
