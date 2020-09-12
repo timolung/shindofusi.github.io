@@ -419,11 +419,19 @@ header {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
-.fa-angle-down:hover  {
+.down-arrow:hover  {
+  transform: translateX(-50%, 5px);
+  bottom: 25px;
+}
+.fa-angle-down:hover{
   color: $accent-color;
 }
-
 /* ==========================================================================
 Schedule
 ========================================================================== */
@@ -532,7 +540,7 @@ Intro
     margin-left: 20%;
   }
   .proposal-img {
-    min-height: 900px;
+    min-height: 825px;
     height: 100vh;
     background: url('../img/eng/full/S&T-engagement-14.jpg') center center;
     -webkit-background-size: cover;
@@ -558,7 +566,7 @@ Intro
   .left {
     background-color: $black-color;
     height: 100vh;
-    min-height: 900px;
+    min-height: 825px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -599,13 +607,25 @@ Intro
   // //   }
   // // }
 
-
-
+  @media screen and (max-width: 1298px) {
+    .left{
+      min-height: 900px;
+    }
+    .proposal-img{
+      min-height: 900px;
+    }
+  }
 
   @media screen and (max-width: 1100px) {
     p{
       font-size: 12px;
     }
+    // .left{
+    //   min-height: 900px;
+    // }
+    // .proposal-img{
+    //   min-height: 900px;
+    // }
   }
   @media screen and (max-width: 991px) {
     p{
@@ -830,7 +850,7 @@ FAQs
   .proposal-img {
     min-height: 800px;
     height: 100vh;
-    background: url('../img/eng/full/S&T-engagement-107.jpg') center center;
+    background: url('../img/eng/full/S&T-engagement-70.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -845,10 +865,10 @@ FAQs
   }
   .img {
     align: left;
-    margin-left: 20%;
+    margin-left: 21%;
     margin-right: auto;
     margin-bottom: 1%;
-    width: 35%;
+    width: 30%;
     height: auto;
   }
   .right {
@@ -1056,7 +1076,7 @@ Registry
   align-items: center;
   height: 600px;
   width: 100%;
-  background: url('../img/eng/full/S&T-engagement-150-c.jpg') center center;
+  background: url('../img/eng/full/S&T-engagement-149 f3.jpg') center center;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1073,7 +1093,14 @@ Registry
     padding-right: 0%;
     padding-top: 2%;
     padding-bottom: 2%;
+    // max-width: 403px;
+    // min-width: 403px;
   }
+  // @media screen and (max-width: 767px) {
+  //   .box{
+  //     max-width: auto;
+  //   }
+  // }
   .btn{
     // border-radius: 0;
     font-size: 11px;
