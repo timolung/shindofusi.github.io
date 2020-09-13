@@ -446,11 +446,7 @@ Schedule
     font-size: 14px;
     color: #2B2D2F
   }
-  @media screen and (max-width: 850px) {
-    p{
-      font-size: 15px;
-    }
-  }
+
   .container{
     width: 85%; /*can be in percentage also.*/
     height: auto;
@@ -460,8 +456,9 @@ Schedule
   }
   .text-slim{
     margin-bottom:20px;
-    min-height: 350px;
+    min-height: 340px;
   }
+
   .bot-txt {
     position: absolute;
     left: 50%;
@@ -476,6 +473,9 @@ Schedule
     bottom: 120px;
     width: 360px;
   }
+  .exception {
+    bottom: 101px; /*line height is 19px, so 19 less than midtext bottom*/
+  }
 
   .btn-bot {
     position: absolute;
@@ -487,6 +487,29 @@ Schedule
   .bot {
     height: 100px;
   }
+  @media screen and (max-width: 999px) {
+    // .text-slim{
+    //   min-height: 400px;
+    // }
+    // .mid-txt {
+    //   bottom: 115px;
+    //   min-height: 150px;
+    //   width: 310px;
+    // }
+    .container{
+      margin: 0 0 0 0;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 767px){
+    .text-slim{
+      margin-bottom: 60px;
+    }
+    .mid-txt{
+      width: 360px;
+    }
+
+  }
   .btn-color:active {
     color: $white-color;
     background-color: $black-color;
@@ -497,6 +520,11 @@ Schedule
     height: auto;
     margin-bottom: 15px;
     left: 50%;
+  }
+  .bot-buffer{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
   }
   .bot-buffer:after {
     content: "";
