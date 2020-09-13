@@ -8,9 +8,7 @@
     /* p{
       font-size: 10px;
     } */
-    .hero {
-      background: url('../img/eng/web-4.jpg') center center;
-    }
+
     .intro-content {
         display: inline-block;
         width: 70%;
@@ -33,7 +31,9 @@
     .hero .hero-content {
         padding-top: 30%;
     }
-
+    .hero {
+      background: url('../img/eng/web-4.jpg') center center;
+    }
     .header-nav {
         position: fixed;
         background-color: #fff;
