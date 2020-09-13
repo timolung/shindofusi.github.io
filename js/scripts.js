@@ -91,6 +91,7 @@ $(document).ready(function () {
                 }
 
             });
+
         });
     });
     /***************** Smooth Scrolling ******************/
