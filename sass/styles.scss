@@ -1089,7 +1089,7 @@ Registry
   align-items: center;
   height: 600px;
   width: 100%;
-  background: url('../img/eng/full/S&T-engagement-149c.jpg') center center;
+  background: url('../img/eng/full/S&T-engagement-149-reg.jpg') center center;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1108,7 +1108,19 @@ Registry
     padding-bottom: 2%;
   }
   @media screen and (min-width: 1700px) {
-    background: url('../img/eng/full/S&T-engagement-149c2.jpg') center center;
+    background: url('../img/eng/full/S&T-engagement-149-large.jpg') center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+
+    object-fit: cover;
+    overflow:hidden;
+  }
+  @media screen and (max-width: 767px) {
+    background: url('../img/eng/full/S&T-engagement-149-mobile.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
