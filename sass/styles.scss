@@ -161,19 +161,6 @@ Animations
   }
 }
 
-/* ==========================================================================
-Waypoinsts
-========================================================================== */
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9 {
-  visibility: hidden
-}
-.wp8, .wp9 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s
-}
-.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
-  visibility: visible
-}
 
 /* ==========================================================================
 Navigation
@@ -629,31 +616,6 @@ Intro
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  // @media screen and (max-width: 1403px) {
-  //   p{
-  //     font-size: 12px;
-  //   }
-  // }
-  // @media screen and (max-width: 1193px) {
-  //   p{
-  //     font-size: 11px;
-  //   }
-  // }
-  // @media screen and (max-width: 1086px) {
-  //   p{
-  //     font-size: 10px;
-  //   }
-  // }
-  // // @media screen and (max-width: 324px) {
-  // //   p{
-  // //     font-size: 12px;
-  // //   }
-  // // }
-  // // @media screen and (max-width: 324px) {
-  // //   p{
-  // //     font-size: 11px;
-  // //   }
-  // // }
 
   @media screen and (max-width: 1298px) {
     .left{
@@ -835,8 +797,11 @@ Features-stack
 .events
 ========================================================================== */
 .events {
+  padding-bottom: 100px;
+  padding-top: 100px;
   h3 {
     padding-left: 85px;
+
   }
   .leftcol {
     padding-left: 100px;
@@ -991,7 +956,7 @@ FAQs
 Engagement Pics
 ========================================================================== */
 .section-padding-pic {
-  padding: 60px 0px 60px 0px;
+  padding: 20px 0px 60px 0px;
 }
 #eng-pics {
   h3{
@@ -1124,7 +1089,7 @@ Registry
   align-items: center;
   height: 600px;
   width: 100%;
-  background: url('../img/eng/full/S&T-engagement-149 f3.jpg') center center;
+  background: url('../img/eng/full/S&T-engagement-149c.jpg') center center;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1141,14 +1106,19 @@ Registry
     padding-right: 0%;
     padding-top: 2%;
     padding-bottom: 2%;
-    // max-width: 403px;
-    // min-width: 403px;
   }
-  // @media screen and (max-width: 767px) {
-  //   .box{
-  //     max-width: auto;
-  //   }
-  // }
+  @media screen and (min-width: 1700px) {
+    background: url('../img/eng/full/S&T-engagement-149c2.jpg') center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+
+    object-fit: cover;
+    overflow:hidden;
+  }
   .btn{
     // border-radius: 0;
     font-size: 11px;
