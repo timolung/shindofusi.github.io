@@ -443,12 +443,12 @@ Schedule
     padding-left: 20%;
     padding-right: 20%;
     line-height: 19px;
-    font-size: 13px;
+    font-size: 14px;
     color: #2B2D2F
   }
   @media screen and (max-width: 850px) {
     p{
-      font-size: 13px;
+      font-size: 15px;
     }
   }
   .container{
@@ -458,10 +458,24 @@ Schedule
     // position: relative;
     // transform: translate(-0%,5%);
   }
-  // .text-slim{
-  //   margin-bottom:20px;
-  //   min-height: 350px;
-  // }
+  .text-slim{
+    margin-bottom:20px;
+    min-height: 350px;
+  }
+  .bot-txt {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 50px;
+    width: 360px;
+  }
+  .mid-txt {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 120px;
+    width: 360px;
+  }
 
   .btn-bot {
     position: absolute;
@@ -469,10 +483,6 @@ Schedule
     bottom: 5px;
     left: 50%;
     transform: translate(-50%,0);
-  }
-  .top {
-    max-height: 250px;
-    // margin-bottom:20px;
   }
   .bot {
     height: 100px;
