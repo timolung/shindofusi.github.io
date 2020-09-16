@@ -260,6 +260,10 @@ Hero
     bottom: 100px;
     left: 50%;
   }*/
+  @media only screen and (max-width:991px) {
+      background-attachment: inherit;
+
+  }
   .down-arrow a {
     color: $txt-light;
   }
@@ -418,6 +422,7 @@ header {
 .fa-angle-down:hover{
   color: $accent-color;
 }
+
 /* ==========================================================================
 Schedule
 ========================================================================== */

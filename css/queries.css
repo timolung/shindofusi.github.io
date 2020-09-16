@@ -31,9 +31,9 @@
     .hero .hero-content {
         padding-top: 30%;
     }
-    .hero {
+    /* .hero {
       background: url('../img/eng/web-4.jpg') center center;
-    }
+    } */
     .header-nav {
         position: fixed;
         background-color: #fff;
