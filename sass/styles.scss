@@ -610,7 +610,7 @@ Intro
     height: auto;
   }
   .left {
-    background-color: $black-color;
+    background-color: #202124;
     height: 100vh;
     min-height: 825px;
     display: flex;
@@ -824,6 +824,7 @@ Features-stack
   }
   p{
     color: $accent-color;
+    padding-bottom: 10px;
   }
   .leftcol {
     padding-left: 100px;
@@ -910,7 +911,7 @@ FAQs
     height: auto;
   }
   .right {
-    background-color: $black-color;
+    background-color: #202124;
     height: 100vh;
     min-height: 800px;
     display: flex;
