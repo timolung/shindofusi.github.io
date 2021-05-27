@@ -42,7 +42,7 @@
                         <ul class="primary-nav">
                             <li><a href="#schedule">Schedule</a></li>
                             <li><a href="#intro">Our Story</a></li>
-                            <li><a href="#party">Wedding Party</a></li>
+                            <li><a href="#party">Message Us</a></li>
                             <li><a href="#faqs">Logistics</a></li>
                             <li><a href="#eng-pics">Photos</a></li>
                         </ul>
@@ -196,49 +196,51 @@
 <section class="events section-padding" id="party">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h3 class="header">Wedding Party</h3>
+            <div class="col-md-12 text-center">
+                <h3 class="header">Message Us</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+            <div class="col-md-3 col-sm-12 col-xs-12"></div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="wp3">
-                    <p><strong>Bridesmaids</strong></p>
-                    <h5>Rachel Cheng <span class="time">Maid of Honor</span></h5><br>
-                    <!-- <p>labadsafdlsa;fd</p> -->
+                    <p><strong>Thanks for Joining!</strong></p>
+                    <h5>Fill Me Out! <span class="time">All Messages Appreciated :)</span></h5><br>
                 </div>
                 <div class="wp3">
-                    <h5>Christina Gu</h5><br>
-                    <!-- <p>kiwi</p> -->
-                </div>
-                <div class="wp3">
-                    <h5>Eva Mergner</h5><br>
-                    <!-- <p>Capital One</p> -->
-                </div>
-                <div class="wp3">
-                    <h5>Francisca Chou</h5><br>
-                    <!-- <p>Also getting married</p> -->
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <div class="wp4">
-                    <p><strong>Groomsmen</strong></p>
+                  <form class="rsvp-form" method="POST" action="" data-email="example@email.net" id="rsvp-form">
+                    <!-- change the form action to your script url -->
 
-                    <h5>Dustin Kee <span class="time">Best Man</span></h5><br>
-                    <!-- <p>He's pretty stupid. But he's been there for the past
-                    six years. Also, he's in a great med school so he can't be that dumb.</p> -->
-                </div>
-                <div class="wp4">
-                    <h5>Austin Chan</h5><br>
-                    <!-- <p>A different perspective.</p> -->
-                </div>
-                <div class="wp4">
-                    <h5>Galen Cheng</h5><br>
-                    <!-- <p>Looking to learn and improve.</p> -->
-                </div>
-                <div class="wp4">
-                    <h5>Eliot Tong</h5><br>
-                    <!-- <p>A weirdo turned life long friend.</p> -->
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                          <div class="form-input-group">
+                              <i class="fa fa-user"></i><input name="name" class=""
+                                                               placeholder="Your name"
+                                                               required>
+                          </div>
+                      </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                     placeholder="Your email"
+                                                                     required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12">
+                        <textarea class="form-input-group form-message" ktype="message" name="message" rows="5" placeholder="Your Message Here" form="rsvp-form"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper"></div>
+                    </div>
+                    <button class="btn-fill rsvp-btn">
+                        Send
+                    </button>
+
+                  </form>
+
                 </div>
             </div>
         </div>
@@ -270,10 +272,6 @@
                is a ten minute walk from the reception. Prices start at $99 with complimentary parking.
                <a href="https://www.marriott.com/events/start.mi?id=1611980069498&key=GRP" rel="nofollow" target="_blank">Link</a>
                or call <a href="tel:+01-800-321-2211" rel="nofollow">800-321-2211</a>
-              <br><br>
-              <a href="https://www.hyatt.com/en-US/hotel/missouri/hyatt-regency-st-louis-at-the-arch/stlrs" rel="nofollow" target="_blank">Hyatt Regency St. Louis at The Arch</a>
-               is the closest hotel to the Arch. Prices start at $129 with $16 adjacent overnight parking.
-               <a href="https://www.hyatt.com/en-US/group-booking/STLRS/G-LUNG" rel="nofollow" target="_blank">Link</a> or call <a href="tel:+01-314-655-1234" rel="nofollow">314-655-1234</a>.
             </p>
           </div>
           <div class="col-md-12 text-left bot">
@@ -432,23 +430,5 @@
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
-<!-- Google Analytics -->
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-46465113-4', 'auto');
-    ga('send', 'pageview');
-</script>
 </body>
 </html>
